@@ -45,7 +45,7 @@ The dataset should include the following columns:
 - `DNA_loop` – binary (1 = looping, 0 = non-looping)
 
 ## Credits
-Developed by Maor Yehezkeheli  
+Developed by Maor Yehezkehely  
 Research inspired by structural analysis of cMyc/MAX-DNA interactions and chromatin looping in embryonic stem cells.
 
 ---
