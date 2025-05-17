@@ -49,11 +49,6 @@ This script is intended for exploratory data analysis and SVM visualization. It 
 - Plots the scatter of DNA points in GC vs. Length space, color-coded by loop status
 - Overlays the decision boundary as a dashed black line for visual interpretation
 
-Example output:
-```
-SVM Accuracy: 0.86
-Decision Boundary Equation: Length = -1.57 * GC_Content + 113.42
-```
 
 ## Data Format
 The dataset should include the following columns:
