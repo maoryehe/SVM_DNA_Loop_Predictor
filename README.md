@@ -8,6 +8,7 @@ This project analyzes DNA sequences to predict whether they form chromatin loops
 - Trains a linear SVM to classify loop vs. non-loop sequences
 - Includes a user-friendly GUI (Tkinter) to predict loop formation from raw DNA sequence input
 - Displays sequence length, GC content, and prediction outcome
+- Plots the SVM decision boundary on a GC Content vs. Length graph
 
 ## Folder Structure
 ```
@@ -38,6 +39,22 @@ You’ll get:
 - GC content
 - Prediction: ✅ loop / ❌ no loop
 
+## `svm_predictor.py` Overview
+This script is intended for exploratory data analysis and SVM visualization. It performs the following:
+
+- Loads the DNA dataset (`gc_content`, `length`, and `DNA_loop`)
+- Trains a linear Support Vector Machine (SVM) classifier
+- Computes prediction accuracy and prints a classification report (precision, recall, F1-score)
+- Extracts the SVM decision boundary equation
+- Plots the scatter of DNA points in GC vs. Length space, color-coded by loop status
+- Overlays the decision boundary as a dashed black line for visual interpretation
+
+Example output:
+```
+SVM Accuracy: 0.86
+Decision Boundary Equation: Length = -1.57 * GC_Content + 113.42
+```
+
 ## Data Format
 The dataset should include the following columns:
 - `gc_content` – float between 0 and 1
@@ -47,6 +64,3 @@ The dataset should include the following columns:
 ## Credits
 Developed by Maor Yehezkehely  
 Research inspired by structural analysis of cMyc/MAX-DNA interactions and chromatin looping in embryonic stem cells.
-
----
-
