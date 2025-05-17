@@ -8,7 +8,7 @@ from sklearn.metrics import classification_report, accuracy_score
 from sklearn.svm import SVC  # SVM for classification
 
 # Load your dataset
-file_path_all_data = r"C:\Users\maory\OneDrive\Desktop\‏‏all_data_below_0.8.csv"
+file_path_all_data = r"all_data.csv"
 df = pd.read_csv(file_path_all_data)
 
 # Map the DNA_loop values to labels for visualization

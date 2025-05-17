@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 import joblib
 
 # Load dataset and train SVM
-df = pd.read_csv(r"C:\Users\maory\OneDrive\Desktop\‏‏all_data_below_0.8.csv" )
+df = pd.read_csv(r"all_data.csv")
 X = df[['gc_content', 'length']]
 y = df['DNA_loop']
 
